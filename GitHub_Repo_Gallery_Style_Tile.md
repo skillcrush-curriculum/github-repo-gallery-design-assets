@@ -46,6 +46,61 @@ Icons come from Font Awesome Pro 5.10.0 (e.g. `fa-github-alt`).
 
 ---
 
+## Content Reference (Copy-Paste Placeholders)
+
+This project pulls all of its content live from the GitHub API rather than typing it into the HTML by hand. Since you won't wire up any JavaScript yet, use the text below as placeholder content so your shell already reads like the finished page once the data is fetched in.
+
+### Profile Section
+
+| Label | Sample Data |
+| :---- | :---- |
+| Avatar | Included in img directory of style assets |
+| Name | Tauri StClaire |
+| Bio | Hello! I am a responsive coder who loves Javascript React! HTML5 CSS3 FTP Web Hosting Git Version Control JSX ES6 |
+| Location | San Diego, California |
+| Number of public repos | 118 |
+
+### Repo Gallery List (card titles only)
+
+- gen-ai-recipe-chatbot
+- 105-turn_back_time-2
+- wordpress-nutrition-blog
+- national-park-tour-planner
+- study-buddy-with-ui
+- study-buddy
+
+### Repo Detail View (shown after a card is clicked)
+
+Clicking a card swaps the gallery for a detail view with its own labeled data. Two real examples, so you can see the pattern before you build it:
+
+**Example 1**
+
+| Label | Sample Data |
+| :---- | :---- |
+| Name | gen-ai-recipe-chatbot |
+| Description | ChefBoost Gen AI app made with LangChain, Supabase, and pgvector |
+| Default Branch | main |
+| Languages | Python, JavaScript, CSS, HTML, PLpgSQL |
+| Link text | View Repo on GitHub! |
+
+**Example 2**
+
+| Label | Sample Data |
+| :---- | :---- |
+| Name | national-park-tour-planner |
+| Description | An app that allows you to plan trips to national parks using LangChain and Wikipedia and National Parks APIs! |
+| Default Branch | main |
+| Languages | HTML, CSS, Python, JavaScript |
+| Link text | View Repo on GitHub! |
+
+### Other Static UI Text
+
+- Page title: GitHub Repo Gallery
+- Search input placeholder: Search by name
+- Back button text: Back to Repo Gallery
+
+---
+
 ## Core UI Components
 
 ### Badge + Circle
@@ -86,9 +141,8 @@ A small decorative tab that sits above the page header.
 
 ### Breakpoints
 
-| Breakpoint | Behavior |
+| Breakpoint | Device |
 | :---- | :---- |
-| Default (mobile) | Single-column stacking; repo cards full width |
-| `min-width: 700px` | Profile section items go to `45%` width, text left-aligns; repo cards go to `48%` width, space-between |
-| `max-width: 700px` | Profile section paragraph gets extra margin |
-| `min-width: 1200px` | Repo cards narrow to `30%` width (three-up grid) |
+| Default | Mobile
+| `min-width: 700px` | Tablet
+| `min-width: 1200px` | Desktop
